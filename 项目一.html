@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            position: relative;
+            background-image: url(./背景--登录.png);
+            background-size: 100% 100%;
+        }
+
+        .login {
+            position: absolute;
+            width: 800px;
+            height: 500px;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .leftside {
+            position: absolute;
+            background-image: url(./登录左侧图.png);
+            margin: auto;
+            height: 500px;
+            width: 400px;
+            top: 0;
+            left: -400px;
+            right: 0;
+            bottom: 0;
+        }
+
+        .QR {
+            position: absolute;
+            background-image: url(./二维码--登录页面.png);
+            background-size: 100% 100%;
+            margin: auto;
+            height: 260px;
+            width: 236px;
+            top: 130px;
+            left: 0;
+            right: 0;
+            bottom: 110px;
+        }
+
+        .saoyisao p {
+            position: absolute;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 20px;
+            color: white;
+            margin: auto;
+            top: 410px;
+            left: 110px;
+            right: 110px;
+            bottom: 70px;
+            white-space: nowrap;
+        }
+
+        .rightside {
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            height: 500px;
+            width: 400px;
+            top: 0;
+            left: 0;
+            right: -400px;
+            bottom: 0;
+        }
+
+        #username {
+            position: absolute;
+            height: 40px;
+            width: 320px;
+            border: 1px solid #cccccc;
+            color: #cccccc;
+            margin: auto;
+            top: 60px;
+            left: 40px;
+            right: 40px;
+        }
+
+        #password {
+            position: absolute;
+            height: 40px;
+            width: 320px;
+            border: 1px solid #cccccc;
+            color: #cccccc;
+            margin: auto;
+            top: 130px;
+            left: 40px;
+            right: 40px;
+        }
+
+        .rightside>input:hover {
+            background-color: #e1effc;
+
+        }
+
+        .rightside>input:focus {
+            outline-color: #68b1f6;
+            border-style: solid;
+            background-color: #e1effc;
+        }
+
+        #Vcode {
+            position: absolute;
+            height: 40px;
+            width: 180px;
+            border: 1px solid red;
+            color: #cccccc;
+            margin: auto;
+            top: 205px;
+            left: 40px;
+            right: 180px;
+        }
+
+        #Vcode:hover {
+            background-color: #fff;
+        }
+
+        #Vcode:focus {
+            outline-color: #68b1f6;
+            background-color: #fff;
+
+        }
+
+        .rightside>p {
+            position: absolute;
+            margin: auto;
+            color: red;
+            height: 11px;
+            width: 78px;
+            white-space: nowrap;
+            top: 250px;
+            left: 60px;
+            font-size: 11px;
+        }
+
+        h1 {
+            border: 1px solid #cccccc;
+            position: absolute;
+            margin: auto;
+            height: 40px;
+            width: 120px;
+            top: 205px;
+            right: 40px;
+        }
+
+        h2 {
+            position: absolute;
+            margin: auto;
+            color: #4d91d2;
+            height: 14px;
+            width: 72px;
+            white-space: nowrap;
+            top: 264px;
+            right: 40px;
+            left: 288px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        button {
+            position: absolute;
+            margin: auto;
+            height: 40px;
+            width: 200px;
+            background-color: #69b2f7;
+            border: none;
+            color: #fff;
+            top: 310px;
+            left: 100px;
+            right: 100px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: #4c91d4;
+        }
+
+        p.or {
+            position: absolute;
+            margin: auto;
+            height: 9px;
+            font-size: 9px;
+            bottom: 109px;
+            top: 382px;
+            left: 192px;
+            color: #666;
+        }
+
+        .notid{
+            position: absolute;
+            margin: auto;
+            bottom: 61px;
+            left: 68px;
+            height: 14px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #656565;
+        }
+        .register{
+            color: #4992d7;
+            position: absolute;
+            margin: auto;
+            bottom: 61px;
+            left: 171px;
+            height: 14px;
+            font-size: 14px;
+            font-weight: 900;
+        }
+        .visitor{
+            color: #4992d7;
+            position: absolute;
+            margin: auto;
+            bottom: 61px;
+            right: 66px;
+            height: 14px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .title{
+            background-image: url(./标题--登录页面.png);
+            position: absolute;
+            background-size: 100% 100%;
+            margin: auto;
+            width: 429px;
+            height: 64px;
+            top: 140px;
+            left: 560px;
+            right: 552px;
+        }
+        .right_hr{
+            position: absolute;
+            margin: auto;
+            width: 142px;
+            height: 1px;
+            left: 40px;
+            bottom: 105px;
+            color: #ccc;
+        }
+        .left_hr{
+            position: absolute;
+            margin: auto;
+            width: 142px;
+            height: 1px;
+            right: 40px;
+            bottom: 105px;
+            color: #ccc;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title"></div>
+    <div class="login">
+        <div class="rightside">
+            <input type="text" name="username" placeholder="admin" id="username">
+            <input type="password" name="password" id="password" placeholder="密码">
+            <input type="text" name="Vcode" id="Vcode">
+            <p>*请输入验证码</p>
+            <h1>4388</h1>
+            <h2>忘记密码？</h2>
+            <button type="submit">登 录</button>
+            <hr class="right_hr">
+            <hr class="left_hr">
+            <p class="or">or</p>
+            <h3 class="notid">还没有帐号？</h3>
+            <span class="register">立即注册 &bull;</span>
+            <h4 class="visitor">游客访问</h4>
+        </div>
+        <div class="leftside">
+            <div class="QR"></div>
+            <div class="saoyisao">
+                <p>微信扫一扫，轻松关注</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
